@@ -3,23 +3,23 @@ function Navbar() {
   return (
     <>
       <nav className="nav">
-        <a href="/" className="site-icon">
+        <Link to="/" className="site-icon">
           <img src="\src\images\logo black.png" width={80} height={80}></img>
-        </a>
+        </Link>
         <ul>
           <li className="active">
-            <a href="/menu">Menu</a>
+            <Link to="/menu">Menu</Link>
           </li>
           <li>
-            <a href="/login">Login</a>
+            <Link to="/login">Login</Link>
           </li>
           <li>
-            <a href="/about">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <a href="/order">
+            <Link to="/order">
               <button>Order</button>
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
