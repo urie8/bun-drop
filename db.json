@@ -66,11 +66,35 @@
     },
     {
       "id": 9,
-      "title": "Classic Burger",
-      "price": 8.99,
-      "description": "A classic beef burger with lettuce , tomato and cheese.",
-      "category": "burgers",
-      "image": "src/images/burger 9.png"
+      "title": "Classic fries",
+      "price": 4.99,
+      "description": "Classic golden fries.",
+      "category": "sides",
+      "image": "src/images/sides 1.png"
+    },
+    {
+      "id": 10,
+      "title": "Classic fries",
+      "price": 4.99,
+      "description": "Classic golden fries.",
+      "category": "sides",
+      "image": "src/images/sides 2.png"
+    },
+    {
+      "id": 11,
+      "title": "Classic fries",
+      "price": 4.99,
+      "description": "Classic golden fries.",
+      "category": "sides",
+      "image": "src/images/sides 3.png"
+    },
+    {
+      "id": 12,
+      "title": "Classic fries",
+      "price": 4.99,
+      "description": "Classic golden fries.",
+      "category": "sides",
+      "image": "src/images/sides 4.png"
     }
   ]
 }
