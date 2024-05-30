@@ -19,9 +19,12 @@ function Footer() {
             </a>
           </div>
         </div>
-        <div className="footer-text">
+        <div className="footer-contact">
           <h4>Contact</h4>
           <p>Bundrop@mail.com</p>
+        </div>
+
+        <div className="footer-headquarters">
           <h4>Headquarters</h4>
           <p>1000 Defense Pentagon, Washington, DC 20301-1000</p>
         </div>

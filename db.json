@@ -1,0 +1,76 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "title": "Classic Burger",
+      "price": 8.99,
+      "description": "A classic beef burger with lettuce , tomato and cheese.",
+      "category": "burgers",
+      "image": "src/images/buger 1.png"
+    },
+    {
+      "id": 2,
+      "title": "Classic Burger",
+      "price": 8.99,
+      "description": "A classic beef burger with lettuce , tomato and cheese.",
+      "category": "burgers",
+      "image": "src/images/burger 2.png"
+    },
+    {
+      "id": 3,
+      "title": "Classic Burger",
+      "price": 8.99,
+      "description": "A classic beef burger with lettuce , tomato and cheese.",
+      "category": "burgers",
+      "image": "src/images/burger 3.png"
+    },
+    {
+      "id": 4,
+      "title": "Classic Burger",
+      "price": 8.99,
+      "description": "A classic beef burger with lettuce , tomato and cheese.",
+      "category": "burgers",
+      "image": "src/images/burger 4.png"
+    },
+    {
+      "id": 5,
+      "title": "Classic Burger",
+      "price": 8.99,
+      "description": "A classic beef burger with lettuce , tomato and cheese.",
+      "category": "burgers",
+      "image": "src/images/burger 5.png"
+    },
+    {
+      "id": 6,
+      "title": "Classic Burger",
+      "price": 8.99,
+      "description": "A classic beef burger with lettuce , tomato and cheese.",
+      "category": "burgers",
+      "image": "src/images/burger 6.png"
+    },
+    {
+      "id": 7,
+      "title": "Classic Burger",
+      "price": 8.99,
+      "description": "A classic beef burger with lettuce , tomato and cheese.",
+      "category": "burgers",
+      "image": "src/images/burger 7.png"
+    },
+    {
+      "id": 8,
+      "title": "Classic Burger",
+      "price": 8.99,
+      "description": "A classic beef burger with lettuce , tomato and cheese.",
+      "category": "burgers",
+      "image": "src/images/burger 8.png"
+    },
+    {
+      "id": 9,
+      "title": "Classic Burger",
+      "price": 8.99,
+      "description": "A classic beef burger with lettuce , tomato and cheese.",
+      "category": "burgers",
+      "image": "src/images/burger 9.png"
+    }
+  ]
+}

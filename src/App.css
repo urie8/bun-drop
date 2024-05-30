@@ -37,7 +37,9 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  padding: 0.25rem;
+  /* padding: 0.5rem;
+  margin-left: 20px;
+  margin-right: 20px; */
 }
 
 .nav li.active {
@@ -54,9 +56,10 @@ body {
   align-items: center;
 }
 
-.home-wrapper h2 {
+.home-wrapper .subheading {
   align-self: flex-start;
-  margin-left: 10rem;
+  margin-left: 2rem;
+  margin-top: 40px;
 }
 
 .main-hero {
@@ -64,6 +67,9 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 5rem;
+  margin-top: 30px;
+  gap: 25px;
+  width: 100%;
 }
 
 .footer {
@@ -73,14 +79,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.footer-text {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
-  margin-right: 10px;
+  gap: 1rem;
 }
 
 .footer-icons {
@@ -96,4 +95,71 @@ body {
 .footer-icons a {
   margin: 2px;
   color: #777;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.productCard {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.productCard button {
+  align-self: center;
+  width: 100%;
+}
+
+.productCard .productCard-image {
+  max-width: 300px;
+  height: auto;
+}
+
+/* Makes site responsive with minimum width being ipad width */
+@media only screen and (min-width: 768px) {
+  .nav {
+    background-color: #ffa07a;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .nav a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .home-wrapper .subheading {
+    align-self: flex-start;
+    margin-left: 10rem;
+    margin-top: 40px;
+  }
+
+  .cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+  }
+
+  .productCard {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .footer-headquarters {
+    margin-right: 25px;
+  }
 }

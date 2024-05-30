@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
+
 function Navbar() {
   return (
     <>
@@ -7,23 +8,26 @@ function Navbar() {
           <img src="\src\images\logo black.png" width={80} height={80}></img>
         </Link>
         <ul>
-          <li className="active">
-            <Link to="/menu">Menu</Link>
-          </li>
-          <li>
-            <Link to="/login">Login</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/order">
-              <button>Order</button>
-            </Link>
-          </li>
+          <CustomLink to="/menu">Menu</CustomLink>
+          <CustomLink to="/login">Login</CustomLink>
+          <CustomLink to="/about">About</CustomLink>
+          <CustomLink to="/order">Order</CustomLink>
         </ul>
       </nav>
     </>
+  );
+}
+
+// Checks if the current page matches and sets it to active
+function CustomLink({ to, children, ...props }) {
+  const resolvedPath = useResolvedPath(to);
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+  return (
+    <li className={isActive ? "active" : ""}>
+      <Link to={to} {...props}>
+        {children}
+      </Link>
+    </li>
   );
 }
 
