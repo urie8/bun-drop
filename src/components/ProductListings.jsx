@@ -2,9 +2,14 @@ import { useState, useEffect } from "react";
 import ProductCard from "../components/ProductCard";
 import Spinner from "./Spinner";
 
-function ProductListings({ isHome = false, category }) {
+function ProductListings({
+  isHome = false,
+  category = "",
+  displayMode = "flex",
+}) {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
+
   const apiUrl = isHome
     ? "http://localhost:3001/menu?category=burgers&_limit=3"
     : `http://localhost:3001/menu?category=${category}`;
@@ -25,7 +30,7 @@ function ProductListings({ isHome = false, category }) {
   }, []);
 
   return (
-    <div className="cards-wrapper">
+    <div className="cards-wrapper" style={{ display: displayMode }}>
       {loading ? (
         <h2>Loading...</h2>
       ) : (

@@ -46,6 +46,8 @@ body {
 .nav li.active {
   background-color: white;
   border-radius: 50px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px;
 }
 
 .nav li:hover {
@@ -115,6 +117,7 @@ body {
 .cards-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 100px;
   flex-wrap: wrap;
 }
