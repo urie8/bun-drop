@@ -1,5 +1,6 @@
 import MainHero from "../components/MainHero";
 import ProductListings from "../components/ProductListings";
+import useCart from "../hooks/useCart";
 
 function HomePage() {
   return (

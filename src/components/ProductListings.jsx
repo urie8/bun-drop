@@ -2,16 +2,12 @@ import { useState, useEffect } from "react";
 import ProductCard from "../components/ProductCard";
 import Spinner from "./Spinner";
 
-function ProductListings({
-  isHome = false,
-  category = "",
-  displayMode = "flex",
-}) {
+function ProductListings({ isHome = false, category = "" }) {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
   const apiUrl = isHome
-    ? "http://localhost:3001/menu?category=burgers&_limit=3"
+    ? "http://localhost:3001/menu?category=Burgers&_limit=3"
     : `http://localhost:3001/menu?category=${category}`;
 
   useEffect(() => {
@@ -30,7 +26,7 @@ function ProductListings({
   }, []);
 
   return (
-    <div className="cards-wrapper" style={{ display: displayMode }}>
+    <div className="cards-wrapper">
       {loading ? (
         <h2>Loading...</h2>
       ) : (
@@ -38,6 +34,7 @@ function ProductListings({
           {products.map((p) => (
             <ProductCard
               key={p.id}
+              id={p.id}
               image={p.image}
               title={p.title}
               description={p.description}

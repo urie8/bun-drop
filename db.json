@@ -2,66 +2,66 @@
   "menu": [
     {
       "id": 1,
-      "title": "Classic Burger",
+      "title": "Fake Big mac",
       "price": 8.99,
-      "description": "A classic beef burger with lettuce , tomato and cheese.",
-      "category": "burgers",
+      "description": "Like the big mac but not really.",
+      "category": "Burgers",
       "image": "src/images/buger 1.png"
     },
     {
       "id": 2,
-      "title": "Classic Burger",
-      "price": 8.99,
-      "description": "A classic beef burger with lettuce , tomato and cheese.",
-      "category": "burgers",
+      "title": "Double bacon burger",
+      "price": 7.99,
+      "description": "Two patties, bacon, pickles and our homemade secret burger sauce.",
+      "category": "Burgers",
       "image": "src/images/burger 2.png"
     },
     {
       "id": 3,
-      "title": "Classic Burger",
-      "price": 8.99,
-      "description": "A classic beef burger with lettuce , tomato and cheese.",
-      "category": "burgers",
+      "title": "The Anton burger",
+      "price": 6.99,
+      "description": "A quarter pound beef, pickled onions, avocado, jalapenos and cheese. Obligatory buy for people named Anton.",
+      "category": "Burgers",
       "image": "src/images/burger 3.png"
     },
     {
       "id": 4,
-      "title": "Classic Burger",
-      "price": 8.99,
-      "description": "A classic beef burger with lettuce , tomato and cheese.",
-      "category": "burgers",
+      "title": "The Swiss",
+      "price": 7.99,
+      "description": "Three different types of cheese, pickles, onions and sriracha mayo.",
+      "category": "Burgers",
       "image": "src/images/burger 4.png"
     },
     {
       "id": 5,
       "title": "Classic Burger",
-      "price": 8.99,
-      "description": "A classic beef burger with lettuce , tomato and cheese.",
-      "category": "burgers",
+      "price": 5.99,
+      "description": "A classic beef burger with lettuce , tomato, onions and cheese.",
+      "category": "Burgers",
       "image": "src/images/burger 5.png"
     },
     {
       "id": 6,
-      "title": "Classic Burger",
-      "price": 8.99,
-      "description": "A classic beef burger with lettuce , tomato and cheese.",
-      "category": "burgers",
+      "title": "Cheese burger",
+      "price": 2.99,
+      "description": "Can't get any simpler.",
+      "category": "Burgers",
       "image": "src/images/burger 6.png"
     },
     {
       "id": 7,
-      "title": "Classic Burger",
-      "price": 8.99,
-      "description": "A classic beef burger with lettuce , tomato and cheese.",
-      "category": "burgers",
+      "title": "Go green burger",
+      "price": 1.99,
+      "description": "Less carbs, more protein.",
+      "category": "Burgers",
       "image": "src/images/burger 7.png"
     },
     {
       "id": 8,
-      "title": "Classic Burger",
-      "price": 8.99,
-      "description": "A classic beef burger with lettuce , tomato and cheese.",
-      "category": "burgers",
+      "title": "Bacon Burger",
+      "price": 5.99,
+      "description": "Classic cheeseburger with one big difference, bacon.",
+      "category": "Burgers",
       "image": "src/images/burger 8.png"
     },
     {
@@ -69,32 +69,144 @@
       "title": "Classic fries",
       "price": 4.99,
       "description": "Classic golden fries.",
-      "category": "sides",
+      "category": "Sides",
       "image": "src/images/sides 1.png"
     },
     {
       "id": 10,
-      "title": "Classic fries",
+      "title": "Sweet potato fries",
       "price": 4.99,
-      "description": "Classic golden fries.",
-      "category": "sides",
+      "description": "Classic sweet potato fries.",
+      "category": "Sides",
       "image": "src/images/sides 2.png"
     },
     {
       "id": 11,
-      "title": "Classic fries",
+      "title": "Apples",
       "price": 4.99,
-      "description": "Classic golden fries.",
-      "category": "sides",
+      "description": "Just apples.",
+      "category": "Sides",
       "image": "src/images/sides 3.png"
     },
     {
       "id": 12,
-      "title": "Classic fries",
+      "title": "Onion rings",
       "price": 4.99,
-      "description": "Classic golden fries.",
-      "category": "sides",
+      "description": "Good ol onion rings.",
+      "category": "Sides",
       "image": "src/images/sides 4.png"
+    },
+    {
+      "id": 13,
+      "title": "Orange juice",
+      "price": 1.99,
+      "description": "Our homeade organic delicious orange juice.",
+      "category": "Drinks",
+      "image": "src/images/drink 1.png"
+    },
+    {
+      "id": 14,
+      "title": "Beer",
+      "price": 2.99,
+      "description": "Bryggmästarens.",
+      "category": "Drinks",
+      "image": "src/images/drink 2.png"
+    },
+    {
+      "id": 15,
+      "title": "Milk",
+      "price": 2.99,
+      "description": "Why would you order this?",
+      "category": "Drinks",
+      "image": "src/images/drink 3.png"
+    },
+    {
+      "id": 16,
+      "title": "Hawaii smoothie",
+      "price": 2.99,
+      "description": "Our very popular mango/passionfruit smoothie.",
+      "category": "Drinks",
+      "image": "src/images/drink 4.png"
+    },
+    {
+      "id": 17,
+      "title": "Strawberry dream",
+      "price": 2.99,
+      "description": "Delicious mix of strawberries, blueberries and banana.",
+      "category": "Drinks",
+      "image": "src/images/drink 5.png"
+    },
+    {
+      "id": 18,
+      "title": "Crazy avocado",
+      "price": 2.99,
+      "description": "A healthy dose of avocado, and peaches.",
+      "category": "Drinks",
+      "image": "src/images/drink 6.png"
+    },
+    {
+      "id": 19,
+      "title": "Umami dressing",
+      "price": 1,
+      "description": "Taste of roasted garlic and truffle.",
+      "category": "Dips",
+      "image": "src/images/dressing 1.png"
+    },
+    {
+      "id": 20,
+      "title": "Cheddar dip",
+      "price": 1,
+      "description": "Hot and tasty, great for fries!",
+      "category": "Dips",
+      "image": "src/images/dressing 2.png"
+    },
+    {
+      "id": 21,
+      "title": "BBQ",
+      "price": 1,
+      "description": "A smoky BBQ-sauce for BBQ fanatics.",
+      "category": "Dips",
+      "image": "src/images/dressing 3.png"
+    },
+    {
+      "id": 22,
+      "title": "Original dressing",
+      "price": 1,
+      "description": "Can't go wrong with a classic!",
+      "category": "Dips",
+      "image": "src/images/dressing 4.png"
+    },
+    {
+      "id": 24,
+      "title": "Caramel sundae",
+      "price": 4.99,
+      "description": "Ice cream with caramel-sauce and sprinkles.",
+      "category": "Desserts",
+      "image": "src/images/dessert 1.png"
+    },
+    {
+      "id": 25,
+      "title": "Sundae",
+      "price": 4.99,
+      "description": "Ice cream with sprinkles.",
+      "category": "Desserts",
+      "image": "src/images/dessert 2.png"
+    },
+    {
+      "id": 26,
+      "title": "Poppin'Candy sundae",
+      "price": 4.99,
+      "description": "Ice cream with poppin'candy",
+      "category": "Desserts",
+      "image": "src/images/dessert 3.png"
+    },
+    {
+      "id": 27,
+      "title": "Vanilla shake",
+      "price": 4.99,
+      "description": "Handmade milkshake with ice cream, milk and real vanilla from Madagascar!",
+      "category": "Desserts",
+      "image": "src/images/dessert 4.png"
     }
   ]
 }

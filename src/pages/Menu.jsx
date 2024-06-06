@@ -1,20 +1,34 @@
 import React, { useState, useEffect } from "react";
 import MenuHero from "../components/MenuHero";
 import ProductListings from "../components/ProductListings";
+import useCart from "../hooks/useCart";
 
 function Menu() {
   const [categories, setCategories] = useState([
     {
-      name: "burgers",
+      name: "Burgers",
       display: "Flex",
     },
-    { name: "sides", display: "Flex" },
+    { name: "Sides", display: "Flex" },
+    { name: "Drinks", display: "Flex" },
+    { name: "Dips", display: "Flex" },
+    { name: "Desserts", display: "Flex" },
   ]);
 
-  function updateDisplay(cateoryName) {
+  const { addToCart } = useCart();
+
+  function addItemToCart(item) {
+    addToCart(item);
+  }
+
+  function updateDisplay(categoryName) {
     setCategories(
       categories.map((c) => {
-        if (c.name != cateoryName) {
+        if (categoryName === "all") {
+          return { ...c, display: "Flex" };
+        }
+
+        if (c.name != categoryName) {
           return { ...c, display: "none" };
         } else {
           return { ...c, display: "Flex" };
@@ -29,19 +43,30 @@ function Menu() {
         <MenuHero />
         <h1>Menu</h1>
         <div className="filter-buttons">
-          <button className="button-30">All</button>
+          <button className="button-30" onClick={() => updateDisplay("all")}>
+            All
+          </button>
           <button
             className="button-30"
-            onClick={() => updateDisplay("burgers")}
+            onClick={() => updateDisplay("Burgers")}
           >
             Burgers
           </button>
-          <button className="button-30" onClick={() => updateDisplay("sides")}>
+          <button className="button-30" onClick={() => updateDisplay("Sides")}>
             Sides
           </button>
-          <button className="button-30">Drinks</button>
-          <button className="button-30">Dips</button>
-          <button className="button-30">Desserts</button>
+          <button className="button-30" onClick={() => updateDisplay("Drinks")}>
+            Drinks
+          </button>
+          <button className="button-30" onClick={() => updateDisplay("Dips")}>
+            Dips
+          </button>
+          <button
+            className="button-30"
+            onClick={() => updateDisplay("Desserts")}
+          >
+            Desserts
+          </button>
         </div>
 
         {categories.map((c) => (
@@ -50,7 +75,7 @@ function Menu() {
             className="container"
             style={{ display: c.display }}
           >
-            <h1>{c.name}</h1>
+            <h1 className="category-title">{c.name}</h1>
             <ProductListings isHome={false} category={c.name} />
           </div>
         ))}
