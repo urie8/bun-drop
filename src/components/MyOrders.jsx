@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import useCart from "../hooks/useCart";
 import OrderCard from "./OrderCard";
-import Order from "../pages/Order";
+import Order from "../pages/OrderPage";
 import PaymentForm from "./PaymentForm";
 
 function MyOrders() {
-  const [orders, setOrders] = useState([]);
   const { getCart, removeFromCart } = useCart();
+  const [orders, setOrders] = useState([]);
   const [sumTotal, setSumTotal] = useState(0);
   let totalPrice = 0;
 
@@ -96,8 +96,8 @@ function MyOrders() {
           ))}
         </div>
         <div className="form-container">
-          <PaymentForm />
-          <h2 className="totalprice">Total: {sumTotal}</h2>
+          <PaymentForm orders={orders} />
+          <h2 className="totalprice">Total: ${sumTotal}</h2>
         </div>
       </div>
     </>

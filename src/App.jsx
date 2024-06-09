@@ -10,7 +10,8 @@ import HomePage from "./pages/HomePage";
 import Menu from "./pages/Menu";
 import Login from "./pages/Login";
 import About from "./pages/About";
-import Order from "./pages/Order";
+import Order from "./pages/OrderPage";
+import OrderConfirmationPage from "./pages/OrderConfirmationPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,6 +21,10 @@ const router = createBrowserRouter(
       <Route path="/login" element={<Login />} />
       <Route path="/about" element={<About />} />
       <Route path="/order" element={<Order />} />
+      <Route
+        path="/orderconfirmationpage/:orderId"
+        element={<OrderConfirmationPage />}
+      />
     </Route>
   )
 );
