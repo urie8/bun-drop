@@ -21,6 +21,7 @@ function Menu() {
     addToCart(item);
   }
 
+  // Check each item in the array and modify it's display property
   function updateDisplay(categoryName) {
     setCategories(
       categories.map((c) => {

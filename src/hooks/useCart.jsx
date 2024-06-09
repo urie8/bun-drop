@@ -10,7 +10,11 @@ function useCart() {
     localStorage.setItem("cart", JSON.stringify(cart));
   }
 
-  function removeFromCart(item) {}
+  function removeFromCart(id) {
+    var cart = JSON.parse(localStorage.getItem("cart") || "[]");
+    var updatedCart = cart.filter((item) => item.id !== id);
+    localStorage.setItem("cart", JSON.stringify(updatedCart));
+  }
 
   function clearCart() {
     localStorage.clear();

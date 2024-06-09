@@ -62,6 +62,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+}
+
+.container h1 {
+  align-self: flex-start;
 }
 
 .menu-container {
@@ -73,8 +78,43 @@ body {
   font-size: 70px;
 }
 
+.orderpage-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .orders-container {
   width: 50%;
+  height: 700px;
+  overflow-y: auto;
+}
+.totalprice {
+  margin-left: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  margin-right: 50px;
+}
+
+.input-form {
+  width: 20%;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .subheader {
@@ -147,19 +187,36 @@ body {
 .productCard {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 250px;
-  height: auto;
+  height: 600px;
   margin-bottom: 50px;
 }
 
 .productCard button {
-  width: 100%;
+  width: 95%;
+  align-self: center;
 }
 
 .productCard .productCard-image {
   max-width: 300px;
   height: auto;
   align-self: center;
+}
+
+.orderCard {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.orderCard-image {
+  width: 200px;
+}
+.delete-button-img {
+  width: 100px;
 }
 
 .button-30 {
@@ -266,7 +323,21 @@ body {
   .productCard {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    height: 600px;
     margin-bottom: 50px;
+  }
+
+  .productCard button {
+    width: 100%;
+    align-self: flex-end;
+  }
+
+  .productCard .productCard-image {
+    max-width: 300px;
+    height: auto;
+    align-self: center;
   }
 
   .footer-headquarters {
