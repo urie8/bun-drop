@@ -16,7 +16,7 @@ function OrderCard(props) {
       <button className="delete-button" onClick={props.onDelete}>
         <img
           className="delete-button-img"
-          src="src/images/Trash-Can-icon.png"
+          src="src/images/red-trash-can-icon.png"
         ></img>
       </button>
     </div>

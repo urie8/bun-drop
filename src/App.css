@@ -85,6 +85,10 @@ body {
   overflow-y: auto;
 }
 
+.orders-container img {
+  background-color: transparent;
+}
+
 .receipt-container {
   display: flex;
   flex-direction: column;
@@ -232,13 +236,15 @@ select {
   gap: 1rem;
   align-items: center;
   justify-content: space-between;
+  margin-right: 20px;
 }
 
 .orderCard-image {
   width: 200px;
 }
 .delete-button-img {
-  width: 100px;
+  width: 40px;
+  background-color: "rgba(52, 52, 52, 0.8)";
 }
 
 .button-30 {
